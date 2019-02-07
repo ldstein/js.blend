@@ -12,8 +12,6 @@ module.exports = (function(unzipper) {
 
     var worker = null,
 
-        FR = new FileReader(),
-
         return_object = {
             loadBlendFromArrayBuffer: function(array_buffer) {
                 return_object.ready = false;
@@ -26,6 +24,7 @@ module.exports = (function(unzipper) {
                 }
             },
             loadBlendFromBlob: function(blob) {
+                FR = new FileReader();
                 FR.onload = function() {
                     return_object.loadBlendFromArrayBuffer(this.result);
                 };
@@ -56,7 +55,8 @@ module.exports = (function(unzipper) {
             finished_objects = [],
             FILE = null,
             ERROR = null,
-            AB = null;
+            AB = null,
+            self = self || this;
 
         function parseFile(msg) {
             
