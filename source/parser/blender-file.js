@@ -10,7 +10,7 @@ const BLENDER_FILE = function(AB) {
     this.objects = {};
     this.memory_lookup = {},
     this.object_array = [];
-
+    this.isBlendFile = false;
     this.template = null;
 };
 

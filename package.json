@@ -4,9 +4,7 @@
   "description": "A Blender to Javascript File Reader",
   "main": "./build/jsblend.js",
   "scripts": {
-    "watch": "npm-watch",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify ./source/main.js -o ./build/js.blend.js -d"
+    "test": "node ./example/test.js"
   },
   "watch": {
     "build": "source"
@@ -15,20 +13,16 @@
     "Blender",
     "ThreeJS"
   ],
-  "author": "Anthony C Weathersby",
+  "author": "ldstein",
   "license": "MIT",
-  "dependencies": {
-    "base64-js": "^1.2.1"
-  },
-  "devDependencies": {
-    "npm-watch": "^0.2.0"
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Galactrax/js.blend.git"
+    "url": "git+https://github.com/ldstein/js.blend.git"
   },
   "bugs": {
-    "url": "https://github.com/Galactrax/js.blend/issues"
+    "url": "https://github.com/ldstein/js.blend/issues"
   },
-  "homepage": "https://github.com/Galactrax/js.blend#readme"
+  "homepage": "https://github.com/ldstein/js.blend#readme"
 }
